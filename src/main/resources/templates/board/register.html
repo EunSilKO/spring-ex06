@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>register</h1>
+    <form th:action="@{/board/register}" method="post">
+        <div>제목 : <input type="text" name="title"></div>
+        <div>작성자 : <input type="text" name="writer"></div>
+        <div><textarea name="content"></textarea></div>
+        <button>작성 완료</button>
+    </form>
+
+</body>
+</html>

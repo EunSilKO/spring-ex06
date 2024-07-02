@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>detail page</h1>
+    <div th:object="${board}">
+        <h3 th:text="*{title}"></h3>
+        <p th:text="*{writer}"></p>
+        <p th:text="*{content}"></p>
+    </div>
+
+<a th:href="@{/board/list}">목록으로</a>
+<a th:href="@{/board/modify(boardId=${board.boardId})}">수정하기</a>
+
+
+
+</body>
+</html>
